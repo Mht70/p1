@@ -1,5 +1,8 @@
 public class CalcPr {
-    int arg1, arg2;
+    private static long arg1;
+    private static long arg2;
+    private static long arg5;
+    private static long arg6;
 
     public static void main(String[] args) {
         System.out.println("Калькулятор");
@@ -16,20 +19,17 @@ public class CalcPr {
 
         long result = multiplyAndSumma(1);
         System.out.println(result);
+
+        long resultOfMultiply = multiply(5, 100);
+        System.out.println(resultOfMultiply);
     }
 
-    /**
-     * Метод будет складывать два аргумента и возвращать результат этой операции
-     *
-     * @param arg1 первый аргумент
-     * @param arg2 второй аргумент
-     * @return результат сложения двух чисел
-     */
+    private static long multiply(int arg5, int arg6) {
+        long multiply = arg5 * arg6;
+        return multiply;
+    }
+
     public static long summa(int arg1, int arg2) {
-         /* В этой переменной будет храниться результат сложения двух чисел
-         Результат вычисления должен быть совместим по типу с аргументами,
-         над которыми осуществляется операция сложения
-         Еще одна строка */
         long result = arg1 + arg2;
         return result;
     }
@@ -44,4 +44,3 @@ public class CalcPr {
         return result;
     }
 }
-
