@@ -1,8 +1,6 @@
 public class CalcPr {
     private static long arg1;
     private static long arg2;
-    private static long arg5;
-    private static long arg6;
 
     public static void main(String[] args) {
         System.out.println("Калькулятор");
@@ -22,10 +20,26 @@ public class CalcPr {
 
         long resultOfMultiply = multiply(5, 100);
         System.out.println(resultOfMultiply);
+
+        long resultOfDivide = divide(21, 7);
+        System.out.println(resultOfDivide);
+
+        long resultOfSpeed = speed(10, 1);
+        System.out.println(resultOfSpeed+" км/ч");
+
     }
 
-    private static long multiply(int arg5, int arg6) {
-        long multiply = arg5 * arg6;
+    private static long speed(int arg1, int arg2) {
+        return arg1 * arg2;
+    }
+
+    private static long divide(int arg1, int arg2) {
+        long divide = arg1 / arg2;
+        return divide;
+    }
+
+    private static long multiply(int arg1, int arg2) {
+        long multiply = arg1 * arg2;
         return multiply;
     }
 
