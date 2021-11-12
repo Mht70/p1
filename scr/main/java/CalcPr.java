@@ -28,7 +28,9 @@ public class CalcPr {
         System.out.println(resultOfSpeed+" км/ч");
 
     }
-
+    /* пояснения
+    * @param resultOfSpeed произведение километров и часов
+     */
     private static long speed(int arg1, int arg2) {
         return arg1 * arg2;
     }
